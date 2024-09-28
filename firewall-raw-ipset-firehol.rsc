@@ -49,3 +49,9 @@ add action=drop chain=prerouting comment=\
 add action=drop chain=prerouting comment=\
     "IP List Blacklist Firehol Anonymous" src-address-list=\
     00_firehol_anonymous
+add action=drop chain=prerouting comment=\
+    "DNS Public List" src-address-list=\
+    00_dns-public
+add action=drop chain=prerouting comment=\
+    "TrustPositifList" src-address-list=\
+    00_TrustPositifList
